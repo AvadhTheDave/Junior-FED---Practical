@@ -16,6 +16,14 @@ module.exports = {
     {
       label: 'Careers advice',
       href: '#careers'
+    },
+    {
+      label: 'Job Alerts',
+      href: '#job-alerts'
+    },
+    {
+      label: 'Your Jobs',
+      href: '#your-jobs'
     }
   ],
   heroMessage: 'Search 1,570 jobs.',
