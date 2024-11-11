@@ -7,6 +7,14 @@
   padding: 24px 0;
   position: relative;
 
+  ul li a {
+    font-weight: 700;
+    font-size: 16px;
+    &:hover {
+      color: variables.$color-brand;
+    }
+  }
+
   @media screen and (max-width: variables.$breakpoint-small) {
     .no-js & {
       display: block;

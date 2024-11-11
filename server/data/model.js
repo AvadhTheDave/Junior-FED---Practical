@@ -45,5 +45,49 @@ module.exports = {
       subtitle:
         'Upload your resume so our employers can match your details to the best jobs.'
     }
+  ],
+  footerItems: [
+    {
+      label: 'Browse jobs',
+      href: '#browse-jobs'
+    },
+    {
+      label: 'Search employers',
+      href: '#search-employers'
+    },
+    {
+      label: 'Terms & Conditions',
+      href: '#terms-and-conditions'
+    },
+    {
+      label: 'Privacy',
+      href: '#privacy'
+    },
+    {
+      label: 'About Us',
+      href: '#about-us'
+    },
+    {
+      label: 'Contact Us',
+      href: '#contact-us'
+    }
+  ],
+  socialIcons: [
+    {
+      label: 'Facebook',
+      src: 'Facebook.svg'
+    },
+    {
+      label: 'Twitter',
+      src: 'Twitter.svg'
+    },
+    {
+      label: 'Google Plus',
+      src: 'GooglePlus.svg'
+    },
+    {
+      label: 'LinkedIn',
+      src: 'LinkedIn.svg'
+    }
   ]
 };

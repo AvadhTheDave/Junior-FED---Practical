@@ -48,6 +48,16 @@
       
       {% block footer %}
       <footer>
+        <div class="footer">
+          <div class="wrapper">
+            <div class="footer__links">
+              {% include 'includes/footerlinks.njk' %}
+            </div>
+            <div class="footer__bottom">
+              {% include 'includes/footerbottom.njk' %}
+            </div>
+          </div>
+        </div>
       </footer>
       {% endblock %}
 
