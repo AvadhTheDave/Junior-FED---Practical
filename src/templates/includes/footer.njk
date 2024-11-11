@@ -1,0 +1,27 @@
+<div class="footer">
+    <div class="wrapper">
+        <div class="footer__links">
+            <links>
+                <ul class="page-footerlinks u-reset-list">
+                {% for item in footerItems %}
+                    <li class="page-footerlinks__item"><a href="{{ item.href }}">{{ item.label }}</a></li>
+                {% endfor %}
+                </ul>
+            </links>
+        </div>
+        <div class="footer__bottom">
+            <social>
+                <div class="page-footerbottom">
+                    <h4 class="page-footerbottom_copyright">© 2016. Powered by Madgex</h4>
+                    <div class="page-footerbottom_links">
+                        {% for social in socialIcons %}
+                            <a class="page-footerbottom__item" aria-label="{{ social.label }}" href="#">
+                                <img src="{{ assetPath }}/images/_social/{{social.src}}">
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </social>
+        </div>
+    </div>
+</div>
