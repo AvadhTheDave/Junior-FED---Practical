@@ -10,51 +10,116 @@
   ul li a {
     font-weight: 700;
     font-size: 16px;
+    color: #434243;
     &:hover {
       color: variables.$color-brand;
     }
   }
 
-  @media screen and (max-width: variables.$breakpoint-small) {
-    .no-js & {
-      display: block;
+  &__logo {
+    max-width: 190px;
+  
+    @media screen and (max-width: variables.$breakpoint-small) {
+      width: 40%;
     }
   }
 
-  a:not(.button) {
-    color: inherit;
+  &__burger {
+    display: none;
+      font-size: 24px;
+      cursor: pointer;
+  
+      @media screen and (max-width: variables.$breakpoint-small) {
+        display: block;
+      }
   }
-}
 
-.page-header__logo {
-  max-width: 190px;
+  &__nav {
+    display: flex;
+    padding: 0;
 
-  @media screen and (max-width: variables.$breakpoint-small) {
-    width: 40%;
-  }
-}
-
-// TODO: move this
-.page-nav {
-  @media screen and (max-width: variables.$breakpoint-small) {
-    > .page-nav__item {
+    @media screen and (max-width: variables.$breakpoint-small) {
       display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90%;
+      right: -20px;
+      background-color: variables.$color-brand;
+      width: 100%;
+      padding: 20px;
+      box-shadow: inset 0px 10px 8px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+
+      &.is-visible {
+        display: flex;
+        .page-header__nav-item a {
+          font-size: 18px;
+          color: white;
+          font-weight: 400;
+          text-decoration: none;
+          &:active {
+            filter: brightness(0.8);
+          }
+        }
+      }      
+    }
+  }
+
+  &__nav-item {
+    display: inline-block;
+    font-family: "ProximaNova";
+    font-weight: 500;
+    margin-left: 30px;
+
+    @media screen and (max-width: variables.$breakpoint-medium) {
+      margin-left: 15px;
     }
 
-    .no-js & > .page-nav__item {
+    @media screen and (max-width: variables.$breakpoint-small) {
       display: block;
-      margin: 10px 0 10px;
+      margin: 10px 0;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 16px;
+
+      &:hover {
+        color: variables.$color-brand;
+      }
+    }
+  }
+
+  &__button {
+    padding: 8px 16px;
+    background-color: variables.$color-brand;
+    color: #fff !important;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    @media screen and (max-width: variables.$breakpoint-small) {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      color: #434243 !important;
+      background-color: #fff;
+      &:active {
+        filter: brightness(0.8);
+      }
     }
   }
 }
 
-.page-nav__item {
-  display: inline-block;
-  font-family: "ProximaNova";
-  font-weight: 500;
-  margin-left: 30px;
-
-  @media screen and (max-width: 895px) {
-    margin-left: 18px;
+.no-js .page-header__nav {
+  display: block;
+  .page-header__nav-item {
+    margin: 10px 0;
   }
 }
