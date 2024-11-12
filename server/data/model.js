@@ -28,6 +28,100 @@ module.exports = {
   ],
   heroMessage: 'Search 1,570 jobs.',
   heroSubtitle: 'Hundreds of new career opportunities each day. Find your perfect job.',
+  browseSectorMessage: 'Browse jobs by sector',
+  browseFeaturedMessage: 'Featured jobs',
+  browseItems: [
+    {
+      label: 'Accountancy & Finance',
+      href: 'accountancy-finance',
+      quantity: '41'
+    },
+    {
+      label: 'Architecture, Building & Planning',
+      href: 'architecture-building-planning',
+      quantity: '71'
+    },
+    {
+      label: 'Art & Design',
+      href: 'art-design',
+      quantity: '59'
+    },
+    {
+      label: 'Building & Construction',
+      href: 'building-construction',
+      quantity: '49'
+    },
+    {
+      label: 'Business Management',
+      href: 'business-management',
+      quantity: '247'
+    },
+    {
+      label: 'Catering & Hospitality',
+      href: 'catering-hospitality',
+      quantity: '14'
+    },
+    {
+      label: 'Computers & IT',
+      href: 'computers-it',
+      quantity: '55'
+    },
+    {
+      label: 'Education',
+      href: 'education',
+      quantity: '193'
+    },
+    {
+      label: 'Engineering',
+      href: 'engineering',
+      quantity: '47'
+    },
+    {
+      label: 'Media & Journalism',
+      href: 'media-journalism',
+      quantity: '123'
+    },
+    {
+      label: 'Retail & Wholesale',
+      href: 'retail-wholesale',
+      quantity: '100'
+    },
+    {
+      label: 'Sales',
+      href: 'sales',
+      quantity: '29'
+    },
+    {
+      label: 'Sciences',
+      href: 'sciences',
+      quantity: '79'
+    },
+    {
+      label: 'Sports & Fitness',
+      href: 'sports-fitness',
+      quantity: '72'
+    }
+  ],
+  featuredItems: [
+    {
+      logo: 'microsoft',
+      role: 'Business Systems Analyst',
+      location: 'New York City',
+      salary: '$30,000 - $40,000'
+    },
+    {
+      logo: 'amex',
+      role: 'Paralegal Positions',
+      location: 'Newton, MA',
+      salary: 'Competitive salary'
+    },
+    {
+      logo: 'nasa',
+      role: 'Operations Director',
+      location: 'Cape Canaveral, FL',
+      salary: 'Up to $100,000'
+    }
+  ],
   ctas: [
     {
       icon: 'job-alerts',

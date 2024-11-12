@@ -1,0 +1,96 @@
+@use "../variables";
+
+.browse {
+    height: 440px;
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+
+    .browse-sector {
+        width: calc(100%/3 * 2);
+
+        &__title {
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h3 + h3 {
+                display: flex;
+                font-size: 15px;
+                align-items: center;
+                padding: 15px;
+            }            
+        }
+
+        &__list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 20px;
+            li {
+                h5 {
+                    margin: 0;
+                }
+
+                .quantity {
+                    text-decoration: none;
+                    pointer-events: none;
+                    color: #9B9B9B;
+
+                }
+            }
+        }
+    }
+
+    .browse-featured {
+        width: calc(100%/3);
+        height: 100%;
+
+        &__title {
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h3 + h3 {
+                display: flex;
+                font-size: 15px;
+                align-items: center;
+                padding: 15px;
+            }            
+        }
+
+        &__list {
+            height: inherit;
+            
+            &-item {
+                height: calc(100%/3 - 30px);
+                display: flex;
+                flex-direction: row;
+                .company {
+                    &__logo {
+                        width: 140px;
+                        padding: 5px;
+                        border: 1px solid black;
+                        margin-right: 10px;
+                    }
+                }
+
+                &-info {
+                    h5 {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .location, .salary {
+                        margin: 0;
+                    }
+
+                    .salary {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
