@@ -42,7 +42,7 @@
 				display: flex;
 				flex-direction: row;
 
-				.page-footerlinks__item {
+				&__item {
 					margin: 1px 0;
 					text-align: left;
 				}

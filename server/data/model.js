@@ -27,6 +27,7 @@ module.exports = {
     }
   ],
   heroMessage: 'Search 1,570 jobs.',
+  heroSubtitle: 'Hundreds of new career opportunities each day. Find your perfect job.',
   ctas: [
     {
       icon: 'job-alerts',

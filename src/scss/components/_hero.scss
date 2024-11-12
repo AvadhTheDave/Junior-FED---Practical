@@ -1,0 +1,160 @@
+@use "../variables";
+
+.hero-section {
+    height: 544px;
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    @media screen and (max-width: variables.$breakpoint-small) {
+        height: 460px;
+    }
+
+    &__title {
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1, h2 {
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+
+            @media screen and (max-width: variables.$breakpoint-x-small) {
+                font-size: 32px;
+            }
+        }
+
+        h2 {
+            font-size: 21px;
+            margin: 0;
+
+            @media screen and (max-width: variables.$breakpoint-x-small) {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            height: 210px;
+            align-items: flex-start;
+        }
+    }
+
+    &__search {
+        height: 124px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.7);
+        .search {
+            &__input-group {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                align-items: center;
+                .input-group {
+                    &__text {
+                        height: 40px;
+                        width: 370px;
+                        padding: 0 0 0 10px;
+                        margin: 5px;
+
+                        @media screen and (max-width: variables.$breakpoint-medium) {
+                            width: 25vw;
+                        }
+
+                        @media screen and (max-width: variables.$breakpoint-small) {
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &__dropdown {
+                        height: 45px;
+                        width: 190px;
+                        padding: 0 10px;
+                        margin: 5px;
+
+                        @media screen and (max-width: variables.$breakpoint-medium) {
+                            width: 25vw;
+                        }
+
+                        @media screen and (max-width: variables.$breakpoint-small) {
+                            padding: 10px;
+                            width: 103%;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: variables.$breakpoint-small) {
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+
+            &__button {
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding: 0 0 0 10px;
+
+                @media screen and (max-width: variables.$breakpoint-small) {
+                    padding: 10px 0;
+                    width: 100%;
+                    justify-content: center;
+                }
+                
+                a {
+                    width: 90%;
+                    display: flex;
+                    color: #fff;
+                    padding: 10px;
+                    background-color: variables.$color-secondary;
+                    justify-content: center;
+                    border-radius: 5px;
+
+                    @media screen and (max-width: variables.$breakpoint-medium) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: variables.$breakpoint-small) {
+                        padding: 10px 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__container {
+                width: 1320px;
+                margin: 0 auto;
+                padding: 0 15px;
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: variables.$breakpoint-small) {
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 20px 60px;
+                }
+
+                @media screen and (max-width: variables.$breakpoint-x-small) {
+                    padding: 20px 30px;
+                }
+            }
+        }
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            height: 250px;
+        }
+    }
+}
