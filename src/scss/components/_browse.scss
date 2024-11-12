@@ -20,7 +20,11 @@
                 font-size: 15px;
                 align-items: center;
                 padding: 15px;
-            }            
+            }
+            
+            @media screen and (max-width: variables.$breakpoint-medium) {
+                justify-content: unset;
+            }
         }
 
         &__list {
@@ -42,6 +46,22 @@
 
                 }
             }
+
+            @media screen and (max-width: variables.$breakpoint-medium) {
+                gap: 25px 5px;
+                width: 700px;
+                li {
+                    width: 300px;
+                }
+            }
+
+            @media screen and (max-width: variables.$breakpoint-small) {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            width: 100%;
         }
     }
 
@@ -59,7 +79,11 @@
                 font-size: 15px;
                 align-items: center;
                 padding: 15px;
-            }            
+            }
+            
+            @media screen and (max-width: variables.$breakpoint-medium) {
+                justify-content: unset;
+            }
         }
 
         &__list {
@@ -75,6 +99,10 @@
                         padding: 5px;
                         border: 1px solid black;
                         margin-right: 10px;
+
+                        @media screen and (max-width: variables.$breakpoint-small) {
+                            width: 80px;
+                        }
                     }
                 }
 
@@ -88,9 +116,27 @@
 
                     .salary {
                         margin-top: 20px;
+
+                        @media screen and (max-width: variables.$breakpoint-small) {
+                            margin: 0;
+                        }
                     }
+                }
+
+                @media screen and (max-width: variables.$breakpoint-small) {
+                    margin: 10px 0;
                 }
             }
         }
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: variables.$breakpoint-medium) {
+        height: auto;
+        flex-direction: column;
+        width: auto;
     }
 }
