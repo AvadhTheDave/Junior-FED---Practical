@@ -84,15 +84,43 @@
 
 {% block information %}
     <div class="information">
-        <div class="wrapper">
-            <div class="information__about-us">
-
-            </div>
-            <div class="information__app">
-                
-            </div>
-            <div class="information__campaign">
-                
+        <div class="wrapper info">
+            <div class="information__blocks">
+                <div class="information__about-us">
+                    {% set aboutUs = {
+                        title: "About us",
+                        description: "Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most com",
+                        bgColor: "#f7f7f7"
+                    } %}
+                    {{ info.infoBlock(aboutUs.title, aboutUs.description, aboutUs.bgColor) }}
+                </div>
+                <div class="information__app">
+                    {% set appInfo = {
+                        title: "Download our new app",
+                        description: "Easily manage your job search on the go with our iPhone app. Instant job notifications. Search, shortlist and apply.",
+                        bgColor: "#e6f3ff",
+                        image: "{{ assetPath }}/images/mobile-app.png",
+                        imageAlt: "Download on the App Store",
+                        button: { link: "#", text: "Download on the App Store" }
+                    } %}
+                    {{ info.infoBlock(appInfo.title, appInfo.description, appInfo.bgColor, appInfo.image, appInfo.imageAlt, null, appInfo.button) }}
+                </div>
+                <div class="information__campaign">
+                    {% set campaigns = {
+                        title: "Featured campaigns",
+                        description: "",
+                        bgColor: "#f7f7f7",
+                        list: [
+                            { link: "#", text: "Jobs in the United States" },
+                            { link: "#", text: "Management jobs in New York" },
+                            { link: "#", text: "Graduate jobs" },
+                            { link: "#", text: "Engineering jobs in Chicago" },
+                            { link: "#", text: "Jobs in California" },
+                            { link: "#", text: "View more »" }
+                        ]
+                    } %}
+                    {{ info.infoBlock(campaigns.title, campaigns.description, campaigns.bgColor, null, null, campaigns.list) }}
+                </div>
             </div>
         </div>
     </div>

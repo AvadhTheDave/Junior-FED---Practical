@@ -1,2 +1,61 @@
 @use "../variables";
 
+.information {
+    padding: 20px 0;
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            flex-direction: column;
+        }
+    }
+
+    &__about-us, &__app, &__campaign {
+        width: calc(100%/3);
+        padding: 20px;
+        height: auto;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            padding: 10px;
+        }
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+
+    &__campaign {
+        .info-block {
+            &__list-item {
+                &:last-child {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    .info-block {
+        height: 280px;
+        padding: 20px;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            height: 350px;
+        }
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            height: 225px;
+        }
+
+        @media screen and (max-width: variables.$breakpoint-x-small) {
+            height: 280px;
+        }
+
+        &__title {
+            @media screen and (max-width: variables.$breakpoint-x-small) {
+                margin: 0;
+            }
+        }
+    }
+}
