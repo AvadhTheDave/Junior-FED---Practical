@@ -1,0 +1,19 @@
+{% macro infoBlock(title, description, bgColor, image, imageAlt, list, button) %}
+    <div class="info-block" style="background-color: {{ bgColor }};">
+        <h2 class="info-block__title">{{ title }}</h2>
+        <p class="info-block__description">{{ description }}</p>
+        {% if image %}
+            <img src="{{ image }}" alt="{{ imageAlt }}" class="info-block__image"/>
+        {% endif %}
+        {% if list %}
+            <ul class="info-block__list">
+                {% for item in list %}
+                    <li class="info-block__list-item"><a href="{{ item.link }}">{{ item.text }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if button %}
+            <a class="info-block__button" href="{{ button.link }}" class="button">{{ button.text }}</a>
+        {% endif %}
+    </div>
+{% endmacro %}

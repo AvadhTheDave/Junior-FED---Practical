@@ -192,6 +192,23 @@ module.exports = {
       image: 'article5'
     }
   ],
+  campains: [
+    {
+      campaign: 'Jobs in the United States'
+    },
+    {
+      campaign: 'Management jobs in New York'
+    },
+    {
+      campaign: 'Graduate jobs'
+    },
+    {
+      campaign: 'Engineering jobs in Chicago'
+    },
+    {
+      campaign: 'Jobs in California'
+    }
+  ],
   footerItems: [
     {
       label: 'Browse jobs',
