@@ -21,7 +21,9 @@
         <div class="blog__articles">
             {% for item in articles %}
                 <div class="blog__article">
-                    <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__article-image" />
+                    <div class="blog__article-image-container">
+                        <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__article-image" />
+                    </div>
                     <a href="#" class="blog__article-title">{{ item.title }}</a>
                 </div>
             {% endfor %}

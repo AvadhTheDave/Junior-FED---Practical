@@ -8,6 +8,10 @@
     .careers {
         display: flex;
         flex-direction: row;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            flex-direction: column;
+        }
     }
 
     &__ad {
@@ -15,6 +19,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: variables.$breakpoint-small) {
+            flex-direction: column;
+        }
     }
 
     &__ad-image {
@@ -28,10 +42,14 @@
         background-repeat: no-repeat;
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.6);
-        width: 380px;
-        height: 250px;
+        width: 290px;
+        height: 210px;
         color: #fff;
         padding: 15px;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            margin: 0 30px;
+        }
     }
 
     &__ad-title {
@@ -59,5 +77,10 @@
     &__blog {
         width: calc(100%/4 * 3);
         padding-left: 75px;
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            width: 100%;
+            padding-left: 0;
+        }
     }
 }
