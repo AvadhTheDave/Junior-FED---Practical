@@ -1,0 +1,52 @@
+@use "../variables";
+
+.careers-advice {
+    padding: 20px;
+    height: auto;
+
+    &__ad {
+        width: calc(100%/4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__ad-image {
+        margin: 30px;
+    }
+
+    &__ad-content {
+        background-image: url('../images/advertise-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 380px;
+        height: 250px;
+        color: #fff;
+        padding: 15px;
+    }
+
+    &__ad-title {
+        font-size: 21px;
+    }
+
+    &__ad-list {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+    }
+
+    &__ad-button {
+        color: #fff;
+        background-color: variables.$color-secondary;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        &:hover {
+            text-decoration: none;
+            filter: brightness(0.8);
+        }
+    }
+}
