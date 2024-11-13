@@ -3,6 +3,7 @@
 .employers {
     background-color: variables.$color-brand;
     height: auto;
+    overflow: hidden;
 
     &__title {
         display: flex;
@@ -16,10 +17,12 @@
         }
 
         a {
+            display: flex;
             text-decoration: none;
+            align-items: center;
 
             &:hover {
-                color: darken(#fff, 20%);
+                filter: brightness(0.8);
             }
         }
     }
@@ -29,9 +32,25 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 0;
+        overflow: hidden;
 
         .logo {
-            height: 90px;
+            &__image {
+                height: 85px;
+            }
+
+            @media screen and (max-width: variables.$breakpoint-medium) {
+                flex: 0 0 auto;
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+
+        @media screen and (max-width: variables.$breakpoint-medium) {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+            white-space: nowrap;
         }
     }
 }
