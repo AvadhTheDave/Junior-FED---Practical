@@ -39,3 +39,21 @@
         </div>
     </div>
 {% endblock %}
+
+{% block employers %}
+    <div class="employers">
+        <div class="wrapper">
+            <div class="employers__title">
+                <h2>Featured employers</h2>
+                <a href="#" class="view-all">View all employers &raquo;</a>
+            </div>
+            <div class="employers__logos">
+                {% for item in employers %}
+                    <div class="employer__logos-logo logo">
+                        <img src="{{ assetPath }}/images/_employers/{{ item.logo }}.png" alt="{{ item.employer }}" class="logo"/>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

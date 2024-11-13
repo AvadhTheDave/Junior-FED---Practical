@@ -141,6 +141,32 @@ module.exports = {
         'Upload your resume so our employers can match your details to the best jobs.'
     }
   ],
+  employers: [
+    {
+      employer: 'Citi',
+      logo: 'citi'
+    },
+    {
+      employer: 'AgStar',
+      logo: 'agstar'
+    },
+    {
+      employer: 'Ford',
+      logo: 'ford'
+    },
+    {
+      employer: 'IOXUS',
+      logo: 'ioxus'
+    },
+    {
+      employer: 'Nike',
+      logo: 'nike'
+    },
+    {
+      employer: 'Oracle',
+      logo: 'oracle'
+    }
+  ],
   footerItems: [
     {
       label: 'Browse jobs',

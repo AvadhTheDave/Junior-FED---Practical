@@ -1,0 +1,37 @@
+@use "../variables";
+
+.employers {
+    background-color: variables.$color-brand;
+    height: auto;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+        h2, a {
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: darken(#fff, 20%);
+            }
+        }
+    }
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        .logo {
+            height: 90px;
+        }
+    }
+}
