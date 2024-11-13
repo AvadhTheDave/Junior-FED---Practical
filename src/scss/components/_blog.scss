@@ -74,6 +74,10 @@
         @media screen and (max-width: variables.$breakpoint-small) {
             max-width: unset;
         }
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__featured-text {
@@ -141,6 +145,10 @@
             @media screen and (max-width: variables.$breakpoint-x-small) {
                 width: 120px;
             }
+        }
+
+        &:hover {
+            transform: scale(1.05);
         }
     }
 

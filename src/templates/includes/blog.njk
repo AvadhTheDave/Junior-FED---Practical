@@ -8,7 +8,7 @@
         <div class="blog__featured-article">
             {% for item in featuredArticle %}
                 <div class="blog__featured-image-container">
-                    <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__featured-image" />
+                    <a href="#"><img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__featured-image" /></a>
                 </div>
                 <div class="blog__featured-text">
                     <a href="#" class="blog__featured-title">{{ item.title }}</a>
@@ -22,7 +22,7 @@
             {% for item in articles %}
                 <div class="blog__article">
                     <div class="blog__article-image-container">
-                        <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__article-image" />
+                        <a href=""><img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__article-image" /></a>
                     </div>
                     <a href="#" class="blog__article-title">{{ item.title }}</a>
                 </div>

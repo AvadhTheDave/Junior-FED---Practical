@@ -86,7 +86,12 @@
 
       &:hover {
         color: variables.$color-brand;
+        text-decoration: none;
       }
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
