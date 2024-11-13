@@ -167,6 +167,31 @@ module.exports = {
       logo: 'oracle'
     }
   ],
+  featuredArticle: [
+    {
+      title: 'An introduction into ecommerce and the mobile revolution',
+      subtitle: 'There are many ways to market a product or a service and providing the potential clients and customers with testimonials is one of the best ways to market.',
+      image: 'article1'
+    }
+  ],
+  articles: [
+    {
+      title: 'The pros and cons of taking a digital detox in the modern age',
+      image: 'article2'
+    },
+    {
+      title: 'Why should your company value user experience research?',
+      image: 'article3'
+    },
+    {
+      title: 'We’re in the age of big data. But it’s what you do with it that matters',
+      image: 'article4'
+    },
+    {
+      title: 'Industry focus: A look inside Invision’s studio in California',
+      image: 'article5'
+    }
+  ],
   footerItems: [
     {
       label: 'Browse jobs',

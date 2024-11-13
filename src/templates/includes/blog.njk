@@ -1,0 +1,31 @@
+<div class="blog">
+    <div class="blog__header">
+        <h2 class="blog__title">Careers advice</h2>
+        <a href="#" class="blog__view-all">View all articles &raquo;</a>
+    </div>
+
+    <div class="blog__all-articles">
+        <div class="blog__featured-article">
+            {% for item in featuredArticle %}
+                <div class="blog__featured-image-container">
+                    <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__featured-image" />
+                </div>
+                <div class="blog__featured-text">
+                    <a href="#" class="blog__featured-title">{{ item.title }}</a>
+                    <p class="blog__featured-description">
+                        {{ item.subtitle }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="blog__articles">
+            {% for item in articles %}
+                <div class="blog__article">
+                    <img src="{{ assetPath }}/images/_careers-advice/{{ item.image }}.png" alt="{{ item.title }}" class="blog__article-image" />
+                    <a href="#" class="blog__article-title">{{ item.title }}</a>
+                </div>
+            {% endfor %}
+        </div>  
+    </div>
+
+</div>

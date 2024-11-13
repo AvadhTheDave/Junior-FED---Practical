@@ -4,6 +4,12 @@
     padding: 20px;
     height: auto;
 
+
+    .careers {
+        display: flex;
+        flex-direction: row;
+    }
+
     &__ad {
         width: calc(100%/4);
         display: flex;
@@ -48,5 +54,10 @@
             text-decoration: none;
             filter: brightness(0.8);
         }
+    }
+
+    &__blog {
+        width: calc(100%/4 * 3);
+        padding-left: 75px;
     }
 }

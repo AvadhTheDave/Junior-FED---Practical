@@ -61,7 +61,7 @@
 
 {% block careers_advice %}
 <div class="careers-advice">
-    <div class="wrapper">
+    <div class="wrapper careers">
         <div class="careers-advice__ad">
             <img src="{{ assetPath }}/images/mpu.png" alt="Ad image" class="careers-advice__ad-image" />
             <div class="careers-advice__ad-content">
@@ -76,7 +76,10 @@
         </div>
 
 
-    <!-- to do: add blog block here -->
+        <!-- to do: add blog block here -->
+        <div class="careers-advice__blog">
+            {% include 'includes/blog.njk' %}
+        </div>
     </div>
 </div>
 {% endblock %}
