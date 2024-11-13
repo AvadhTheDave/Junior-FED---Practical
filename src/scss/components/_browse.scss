@@ -3,9 +3,9 @@
 .browse {
     height: 440px;
     width: 100%;
-    padding: 20px 15px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     .browse-sector {
         width: calc(100%/3 * 2);
@@ -138,5 +138,6 @@
         height: auto;
         flex-direction: column;
         width: auto;
+        margin: 20px;
     }
 }

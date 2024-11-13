@@ -17,3 +17,25 @@
 {% block browse %}
     {% include 'includes/browse.njk' %}
 {% endblock %}
+
+{% block cta %}
+    <div class="cta">
+        <div class="wrapper">
+            <div class="ctas">
+                {% for item in ctas %}
+                    <div class="cta-item">
+                        <div class="cta-item__icon">
+                            <img src="{{ assetPath }}/images/_ctas/{{ item.icon }}.svg" alt="{{ item.icon }} logo" class="company__logo"/>
+                        </div>
+                        <div class="cta-item__title">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+                        <div class="cta-item__subtitle">
+                            <h3>{{ item.subtitle }}</h3>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
